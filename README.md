@@ -1,6 +1,6 @@
 # Page Settings
 
-Plugin allows you to store page settings in the database.
+Plugin allows you to store page settings in the database instead of files.
 
 ### Installation
 
