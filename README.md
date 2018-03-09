@@ -18,4 +18,4 @@ php artisan vendor:publish --provider="Isswp101\PageSettings\ServiceProvider"
 
 ### Configuration
 
-You can specify fields to be stored in the database in the `config/page.php`.
+You can specify fields to be stored in the database in the `config/page.php`
