@@ -15,7 +15,7 @@ class PageSettingsFacade
      *
      * @param Page $page
      */
-    public function get(Page $page)
+    public function fillPage(Page $page)
     {
         $key = $page->getFileName();
         $pageSettings = PageSettings::findByKey($key);
@@ -29,7 +29,7 @@ class PageSettingsFacade
      *
      * @param Page $page
      */
-    public function put(Page $page)
+    public function save(Page $page)
     {
         $key = $page->getFileName();
         $pageAttributes = $this->getPageAttributes();

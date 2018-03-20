@@ -29,20 +29,20 @@ class Plugin extends PluginBase
 
         // Frontend
         Event::listen('cms.page.beforeRenderPage', function ($c, $page) use ($pageSettings) {
-            $pageSettings->get($page);
+            $pageSettings->fillPage($page);
         });
 
         // Backend
         Event::listen('cms.template.processSettingsAfterLoad', function ($c, $template) use ($pageSettings) {
             if ($template instanceof Page) {
-                $pageSettings->get($template);
+                $pageSettings->fillPage($template);
             }
         });
 
         // Backend
         Event::listen('cms.template.save', function ($c, $template) use ($pageSettings) {
             if ($template instanceof Page) {
-                $pageSettings->put($template);
+                $pageSettings->save($template);
             }
         });
 
