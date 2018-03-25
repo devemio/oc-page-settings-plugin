@@ -6,7 +6,7 @@ This plugin can be useful if you want to store page metadata in the database.
 For example, when you store your source code in Git and some admins have access to edit page metadata.
 When you upload a new version to production it can be difficult to merge changes.
 
-### Installation
+## Installation
 
 ```
 git clone git@github.com:isswp101/oc-page-settings-plugin.git plugins/isswp101/pagesettings
