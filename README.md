@@ -14,7 +14,7 @@ rm -rf plugins/isswp101/pagesettings/.git
 php artisan october:up
 ```
 
-# Usage
+## Usage
 
 To active this feature for existing pages you need to open pages and click on the "**Save**" button for each required page.
 By default the plugin stores the fields described below but you can extend this with a configuration file.
@@ -30,7 +30,7 @@ After the page is saved the fields will be stored to the database and removed fr
 * Meta Title
 * Meta Description
 
-# Configuration
+## Configuration
 
 You can specify fields to be stored in the database in the `config/page.php` file.
 To publish the configuration file run the following command:
