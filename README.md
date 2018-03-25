@@ -41,3 +41,14 @@ php artisan vendor:publish --provider="Isswp101\PageSettings\ServiceProvider"
 
 If you extend the page using https://octobercms.com/docs/plugin/extending#extending-backend-form
 you can specify your fields in the configuration as well.
+
+```
+'attributes' => [
+    'description',
+    'is_hidden',
+    'meta_title',
+    'meta_description',
+
+    'custom_page_field' // added field
+]
+```
