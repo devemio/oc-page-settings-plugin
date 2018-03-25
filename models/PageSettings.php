@@ -4,7 +4,7 @@ use Model;
 
 /**
  * @property string key
- * @property string value
+ * @property array value
  */
 class PageSettings extends Model
 {

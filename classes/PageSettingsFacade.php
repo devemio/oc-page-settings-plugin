@@ -20,7 +20,8 @@ class PageSettingsFacade
         $key = $page->getFileName();
         $pageSettings = PageSettings::findByKey($key);
         if ($pageSettings) {
-            $page->settings = array_merge($page->settings, $pageSettings->value);
+            $settings = array_only($pageSettings->value, $this->getPageAttributes());
+            $page->settings = array_merge($page->settings, $settings);
         }
     }
 
@@ -49,7 +50,13 @@ class PageSettingsFacade
 
     protected function getPageAttributes()
     {
-        return config('page.attributes', []);
+        $default = [
+            'description',
+            'is_hidden',
+            'meta_title',
+            'meta_description',
+        ];
+        return config('page.attributes', $default);
     }
 
     protected function findPageSettingsToPut($key)
