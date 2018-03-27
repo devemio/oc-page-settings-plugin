@@ -9,9 +9,7 @@ When you upload a new version to production it can be difficult to merge changes
 ## Installation
 
 ```
-git clone git@github.com:isswp101/oc-page-settings-plugin.git plugins/isswp101/pagesettings
-rm -rf plugins/isswp101/pagesettings/.git
-php artisan october:up
+php artisan plugin:install Isswp101.PageSettings
 ```
 
 ## Usage
