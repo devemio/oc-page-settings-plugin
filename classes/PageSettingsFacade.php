@@ -56,7 +56,7 @@ class PageSettingsFacade
             'meta_title',
             'meta_description',
         ];
-        return config('page.attributes', $default);
+        return config('isswp101.pagesettings::attributes', $default);
     }
 
     protected function findPageSettingsToPut($key)

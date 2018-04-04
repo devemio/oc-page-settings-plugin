@@ -18,8 +18,6 @@ class Plugin extends PluginBase
 
     public function boot()
     {
-        $this->app->register(ServiceProvider::class);
-
         $this->registerPageEvents();
     }
 

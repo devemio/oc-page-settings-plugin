@@ -30,12 +30,16 @@ After the page is saved the fields will be stored to the database and removed fr
 
 ## Configuration
 
-You can specify fields to be stored in the database in the `config/page.php` file.
-To publish the configuration file run the following command:
+File-based configuration http://octobercms.com/docs/plugin/settings#file-configuration  
+This plugin has a configuration file `config.php` in the `config` subdirectory of the plugin directory.  
+A plugin configuration can be overridden by the application by creating a configuration file:
 
 ```
-php artisan vendor:publish --provider="Isswp101\PageSettings\ServiceProvider"
+mkdir -p config/isswp101/pagesettings
+cp plugins/isswp101/pagesettings/config/config.php config/isswp101/pagesettings
 ```
+
+The configuration file will be located here `config/isswp101/pagesettings/config.php`
 
 If you extend the page using https://octobercms.com/docs/plugin/extending#extending-backend-form
 you can specify your fields in the configuration as well.
