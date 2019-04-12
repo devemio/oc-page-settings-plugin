@@ -8,7 +8,7 @@ When you upload a new version to production it can be difficult to merge changes
 
 ## Installation
 
-```
+```bash
 php artisan plugin:install Isswp101.PageSettings
 ```
 
@@ -34,7 +34,7 @@ File-based configuration http://octobercms.com/docs/plugin/settings#file-configu
 This plugin has a configuration file `config.php` in the `config` subdirectory of the plugin directory.  
 A plugin configuration can be overridden by the application by creating a configuration file:
 
-```
+```bash
 mkdir -p config/isswp101/pagesettings
 cp plugins/isswp101/pagesettings/config/config.php config/isswp101/pagesettings
 ```
