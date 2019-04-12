@@ -44,13 +44,13 @@ The configuration file will be located here `config/isswp101/pagesettings/config
 If you extend the page using https://octobercms.com/docs/plugin/extending#extending-backend-form
 you can specify your fields in the configuration as well.
 
-```
+```php
 'attributes' => [
     'description',
     'is_hidden',
     'meta_title',
     'meta_description',
 
-    'custom_page_field' // added field
+    'custom_page_field' // <== added field
 ]
 ```
